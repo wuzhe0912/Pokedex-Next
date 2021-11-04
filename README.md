@@ -1,7 +1,5 @@
-# Todos
+# Pokedex
 
-## Use
+## Tech
 
-- `#React`、`#React Router`、`#Redux`
-- `#TypeScript`
-- `#styled-components`
+- Next.js, TailwindCSS
