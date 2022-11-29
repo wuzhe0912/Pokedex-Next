@@ -1,6 +1,4 @@
 import Router from 'router';
-// styles
-import './App.css';
 import 'normalize.css';
 
 function App() {

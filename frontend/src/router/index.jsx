@@ -19,7 +19,7 @@ function Router() {
         <Route path='/register' element={<Register />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/productList' element={<ProductList />} />
-        <Route path='/productDetails' element={<ProductDetails />} />
+        <Route path='/productDetails/:id' element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   );
