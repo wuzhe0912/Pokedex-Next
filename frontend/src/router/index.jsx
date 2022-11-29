@@ -7,6 +7,7 @@ import {
   Cart,
   ProductList,
   ProductDetails,
+  NotFound,
 } from 'views';
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/productList' element={<ProductList />} />
         <Route path='/productDetails/:id' element={<ProductDetails />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
