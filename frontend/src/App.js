@@ -1,11 +1,16 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from 'views/Home';
 import './App.css';
 import 'normalize.css';
 
 function App() {
   return (
-    <div className='App'>
-      <span>React App</span>
-    </div>
+    <BrowserRouter>
+      <span>Hello React!</span>
+      <Routes>
+        <Route path='home' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
