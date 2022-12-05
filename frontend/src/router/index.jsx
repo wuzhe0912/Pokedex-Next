@@ -38,8 +38,8 @@ function Router() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/cart' element={<Cart />} />
-        <Route path='/productList' element={<ProductList />} />
-        <Route path='/productDetails/:id' element={<ProductDetails />} />
+        <Route path='/product-list' element={<ProductList />} />
+        <Route path='/product-details/:id' element={<ProductDetails />} />
         {/* user protected routes */}
         <Route element={<ProtectedRoutes admin={false} />}>
           <Route path='/user/userCartDetails' element={<UserCartDetails />} />
@@ -49,24 +49,18 @@ function Router() {
         </Route>
         {/* admin protected routes */}
         <Route element={<ProtectedRoutes admin={true} />}>
-          <Route path='/admin/adminAnalytics' element={<AdminAnalytics />} />
-          <Route path='/admin/adminChats' element={<AdminChats />} />
+          <Route path='/admin/analytics' element={<AdminAnalytics />} />
+          <Route path='/admin/chats' element={<AdminChats />} />
           <Route
-            path='/admin/adminCreateProduct'
+            path='/admin/create-product'
             element={<AdminCreateProduct />}
           />
-          <Route
-            path='/admin/adminEditProduct'
-            element={<AdminEditProduct />}
-          />
-          <Route path='/admin/adminEditUser' element={<AdminEditUser />} />
-          <Route path='/admin/adminOrders' element={<AdminOrders />} />
-          <Route
-            path='/admin/adminOrderDetails'
-            element={<AdminOrderDetails />}
-          />
-          <Route path='/admin/adminProducts' element={<AdminProducts />} />
-          <Route path='/admin/adminUsers' element={<AdminUsers />} />
+          <Route path='/admin/edit-product' element={<AdminEditProduct />} />
+          <Route path='/admin/editUser' element={<AdminEditUser />} />
+          <Route path='/admin/orders' element={<AdminOrders />} />
+          <Route path='/admin/order-details' element={<AdminOrderDetails />} />
+          <Route path='/admin/products' element={<AdminProducts />} />
+          <Route path='/admin/users' element={<AdminUsers />} />
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>
