@@ -1,7 +1,13 @@
-import React from 'react';
+import ProductCarousel from 'components/ProductCarousel';
+import CategoryCard from 'components/CategoryCard';
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <ProductCarousel></ProductCarousel>
+      <CategoryCard></CategoryCard>
+    </>
+  );
 }
 
 export default Home;
